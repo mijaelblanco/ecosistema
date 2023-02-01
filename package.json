@@ -1,0 +1,35 @@
+{
+  "name": "ecosistema",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ecosistema",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.5",
+    "@strapi/plugin-i18n": "4.5.5",
+    "@strapi/plugin-seo": "^1.7.7",
+    "@strapi/plugin-users-permissions": "4.5.5",
+    "@strapi/strapi": "4.5.5",
+    "mysql": "2.18.1",
+    "strapi-plugin-import-export-entries": "^1.18.0",
+    "strapi-plugin-populate-deep": "^1.1.2",
+    "strapi-plugin-publisher": "^1.1.4",
+    "strapi-plugin-reading-time": "^1.0.0"
+  },
+  "author": {
+    "name": "Mijael Blanco"
+  },
+  "strapi": {
+    "uuid": "310ce3df-df1f-4c65-90a0-5d3faec0cd08"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

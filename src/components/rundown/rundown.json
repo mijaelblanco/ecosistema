@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_rundown_rundowns",
+  "info": {
+    "displayName": "Rundown",
+    "icon": "layer-group",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pools": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pool.pool"
+    },
+    "Titulo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

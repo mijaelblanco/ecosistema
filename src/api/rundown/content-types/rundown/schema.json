@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rundowns",
+  "info": {
+    "singularName": "rundown",
+    "pluralName": "rundowns",
+    "displayName": "Rundown",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Rundown": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rundown.rundown",
+      "required": true
+    },
+    "Fecha": {
+      "type": "date",
+      "unique": false,
+      "required": true
+    },
+    "Titulo": {
+      "type": "enumeration",
+      "enum": [
+        "INFO7 - Dia",
+        "INFO7 - Tarde",
+        "ELM - Noche"
+      ],
+      "required": true
+    }
+  }
+}

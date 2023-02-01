@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pools",
+  "info": {
+    "singularName": "pool",
+    "pluralName": "pools",
+    "displayName": "Pool",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Tipo": {
+      "type": "enumeration",
+      "enum": [
+        "CAMERA",
+        "VT",
+        "DVE",
+        "GFX",
+        "VO"
+      ]
+    },
+    "Comentario": {
+      "type": "string"
+    },
+    "Autor": {
+      "type": "string",
+      "required": true
+    },
+    "Cuerpo": {
+      "type": "richtext",
+      "required": true
+    },
+    "Estatus": {
+      "type": "enumeration",
+      "enum": [
+        "Pendiente de Aprobar",
+        "Listo para Revisión"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.meta-social"
+    }
+  }
+}
